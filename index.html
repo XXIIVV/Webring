@@ -508,7 +508,11 @@
 			</li>
 			<li data-lang="en" id="noelle-dev">
 				<a href="https://noelle.dev">noelle.dev</a>
-				<img loading="lazy" src="https://noelle.dev/assets/images/button.gif" style="image-rendering: pixelated;" width="88" height="31">
+				<picture>
+					<source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light)" srcset="https://noelle.dev/assets/images/buttons/static-light.png">
+					<source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://noelle.dev/assets/images/buttons/static-dark.png">
+					<img src="https://noelle.dev/assets/images/buttons/animated-wipe.gif" width="88" height="31" alt="Noelle.dev" loading="lazy" style="image-rendering: pixelated;">
+				</picture>
 			</li>
 			<li data-lang="en" id="giacinto-carlucci">
 				<a href="https://www.giacintocarlucci.it">giacintocarlucci.it</a>
