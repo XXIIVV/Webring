@@ -508,7 +508,11 @@
 			</li>
 			<li data-lang="en" id="noelle-dev">
 				<a href="https://noelle.dev">noelle.dev</a>
-				<img loading="lazy" src="https://noelle.dev/assets/images/button.gif" style="image-rendering: pixelated;" width="88" height="31">
+				<picture>
+					<source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light)" srcset="https://noelle.dev/assets/images/buttons/static-light.png">
+					<source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://noelle.dev/assets/images/buttons/static-dark.png">
+					<img src="https://noelle.dev/assets/images/buttons/animated-wipe.gif" width="88" height="31" alt="Noelle.dev" loading="lazy" style="image-rendering: pixelated;">
+				</picture>
 			</li>
 			<li data-lang="en" id="giacinto-carlucci">
 				<a href="https://www.giacintocarlucci.it">giacintocarlucci.it</a>
@@ -874,7 +878,7 @@
 			body > footer > img { display: inline-block; width: 100px; height: auto; margin-bottom: -5px; margin-bottom: 30px; }
 			body:target > ol li a.twtxt, html:target li a.rss { background: var(--color-beta); color: var(--color-alpha); display: inline; }
 			body:target > footer > p > span.hide, html:target footer > p > span.hide { display: inline; }
-			body > ol:target > li > img { display:block; }
+			#icons:target img, #icons:target picture { display: block; }
 			body > ol > li:target a { color: var(--color-alpha); }
 			body > ol > li:target { background: var(--color-beta); }
 			@media screen and (max-width: 800px) { body > ol { column-count: 2; } }
